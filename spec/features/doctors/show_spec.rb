@@ -42,6 +42,7 @@ RSpec.describe Doctor do
       expect(page).to have_content("Doctor: #{@dr_1.name}")
       # expect(page).to have_content("Specialty: #{@dr_1.specialty}") #this does show up on the page, not sure why my test doesnt recognize it
       expect(page).to have_content("Doctorate Earned From: #{@dr_1.university}")
+      expect(page).to have_content("Hospital: #{@dr_1.hospital.name}")
 
       within "#patients" do
         expect(page).to have_content("#{@dr_1.patients[0].name}", count: 1)
