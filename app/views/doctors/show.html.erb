@@ -1,7 +1,7 @@
-Doctor: <%= @doctor.name %>  <br>
-Specialty: <%= @doctor.specialty %> <br>
-Doctorate Earned From: <%= @doctor.university %>  <br>
-Hospital: <%= @doctor.hospital.name %> <br>
+Doctor: <%= @doctor.name.titleize %>  <br>
+Specialty: <%= @doctor.specialty.titleize %> <br>
+Doctorate Earned From: <%= @doctor.university.titleize %>  <br>
+Hospital: <%= @doctor.hospital.name.titleize %> <br>
 
 <div class="patients">
   <% @doctor.patients.each do |pt| %>
