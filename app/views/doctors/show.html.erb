@@ -1,9 +1,12 @@
 Doctor: <%= @doctor.name %>  <br>
-Doctorate Earned From: <%= @doctor.university %>  <br>
 Specialty: <%= @doctor.specialty %> <br>
+Doctorate Earned From: <%= @doctor.university %>  <br>
 Hospital: <%= @doctor.hospital.name %> <br>
-<div id="patients">
+
+<div class="patients">
   <% @doctor.patients.each do |pt| %>
-    <%= pt.name %> <br>
+    <div id="pt-<%=pt.id%>">
+      <%= pt.name %> <%= button_to "Remove Patient", doctor_patient_path(@doctor, pt), method: :delete, params:{doctor_id: @doctor.id, patient_id: pt.id} %> <br>
+    </div>
   <% end %>
 </div>
