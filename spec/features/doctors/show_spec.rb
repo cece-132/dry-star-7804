@@ -7,10 +7,10 @@ RSpec.describe Doctor do
       @hospital_1 = Hospital.create!(name: "Hospital 1")
       @hospital_2 = Hospital.create!(name: "Hospital 2")
 
-      @dr_1 = Doctor.create!(hospital_id: @hospital_1.id, name: "Jane Doe", specialty: "Specialty  1", university: "University 1")
-      @dr_2 = Doctor.create!(hospital_id: @hospital_1.id, name: "John Deere", specialty: "Specialty  2", university: "University 2")
-      @dr_3 = Doctor.create!(hospital_id: @hospital_2.id, name: "Kevin Joe", specialty: "Specialty  3", university: "University 3")
-      @dr_4 = Doctor.create!(hospital_id: @hospital_2.id, name: "Keheira Smalls", specialty: "Specialty  4", university: "University 4")
+      @dr_1 = Doctor.create!(hospital_id: @hospital_1.id, name: "Jane Doe", specialty: "Specialty 1", university: "University 1")
+      @dr_2 = Doctor.create!(hospital_id: @hospital_1.id, name: "John Deere", specialty: "Specialty 2", university: "University 2")
+      @dr_3 = Doctor.create!(hospital_id: @hospital_2.id, name: "Kevin Joe", specialty: "Specialty 3", university: "University 3")
+      @dr_4 = Doctor.create!(hospital_id: @hospital_2.id, name: "Keheira Smalls", specialty: "Specialty 4", university: "University 4")
 
       @pt_1 = Patient.create!(name: "Patient 1", age: 64)
       @pt_2 = Patient.create!(name: "Patient 2", age: 18)
