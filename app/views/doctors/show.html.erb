@@ -1,0 +1,9 @@
+Doctor: <%= @doctor.name %>  <br>
+Doctorate Earned From: <%= @doctor.university %>  <br>
+Specialty: <%= @doctor.specialty %> <br>
+
+<div id="patients">
+  <% @doctor.patients.each do |pt| %>
+    <%= pt.name %> <br>
+  <% end %>
+</div>
