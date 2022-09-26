@@ -43,11 +43,11 @@ When you run `bundle exec rspec` you should have 2 passing tests.
 Seattle Grace is based off of Grey’s Anatomy, but you need NO knowledge of Grey’s Anatomy to complete this final. Make sure to read all instructions and user stories before getting started.
 ​
 ## Database Information
-* Hospitals have a name
-* Doctors have a name, specialty, and university that they attended
-* Patients have a name and age
-* Hospitals have many Doctors
-* Doctors work for just one hospital
+** Hospitals have a name
+** Doctors have a name, specialty, and university that they attended
+** Patients have a name and age
+** Hospitals have many Doctors
+** Doctors work for just one hospital
 * Doctors can have many patients
 * Patients can have many doctors
 
